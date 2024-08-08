@@ -5,6 +5,11 @@
 def changes = 'git diff --name-only HEAD HEAD~1 -- ./test'.execute()
 println changes.text
 
+def filePath = './lala.txt'
+def fileContent = new File(filePath).text
+
+println fileContent
+
 // if (changes) {
 //     echo "Changes detected in the folder."
 //     // You can set a variable or take any action based on the changes
