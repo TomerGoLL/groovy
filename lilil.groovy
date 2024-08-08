@@ -2,7 +2,7 @@
 'git fetch'.execute()
 
 // Check if the specific folder has changed
-def changes = 'git diff --name-only HEAD HEAD~1 -- ./test'.execute()
+def changes = 'git diff --name-only HEAD HEAD~1'.execute()
 println changes.text
 
 def filePath = './lala.txt'
